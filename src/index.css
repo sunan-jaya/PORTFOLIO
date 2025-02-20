@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BASE */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-zinc-900 text-zinc-50;
+}
+
+/* TYPOGRAPHY */
+
+.headline-1 {
+  @apply max-w-max;
+  background: -webkit-linear-gradient(0deg, #fafafa, #1a1a1a);
+  -webkit-background-clip: text;
+}
+
+.headline-1 {
+  @apply font-semibold text-7xl lg:text-9xl lg:leading-[1.20] max-sm:text-5xl
+}
+
+.headline-2 {
+  @apply text-3xl font-semibold leading-tight lg:leading-tight lg:text-4xl
+}
+
+.headline-3 {
+  @apply text-2xl font-semibold lg:text-5xl max-sm:text-[18px]
+}
+
+.headline-4 {
+  @apply text-lg font-light lg:text-2xl max-sm:text-[15px]
+}
+
+.title-1 {
+  @apply text-[22px] font-normal
+}
+
+
+/* UTILITIES */
+.material-symbols-rounded {
+  @apply w-[1em] h-[1em] overflow-hidden;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.container {
+  @apply px-4 mx-auto lg:px-8 xl:max-w-6xl overflow-visible;
+}
+
+.img-box {
+  @apply bg-zinc-700 overflow-hidden;
+}
+
+.img-cover {
+  @apply w-full h-full object-cover
+}
+
+.section {
+  @apply pt-16 lg:pt-24
+}
+
+.reveal-up {
+  @apply translate-y-20 opacity-0
+}
+
+
+/* MENU BUTTON */
+
+.menu-btn {
+  @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform,background-color] active:scale-75
+}
+
+/* NAVBAR */
+
+.navbar {
+  @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-500 scale-90 isolate blur-sm opacity-0 invisible transition-[opacity,transform,filter] md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 backdrop-blur-2xl
+}
+
+.navbar.active {
+  @apply opacity-100 scale-100 blur-0 visible
+}
+
+.nav-link {
+  @apply grid items-center h-10 px-4 text-sm font-bold tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors
+}
+
+.nav-link.active {
+  @apply text-zinc-900 duration-300
+}
+
+.navbar .active-box {
+  @apply absolute 
+  /* top-2 left-2 right-2 h-10 */
+  bg-zinc-50 rounded-lg -z-10 transition-[top,left] duration-300
+}
+
+/* BUTTON */
+
+.btn {
+  @apply max-w-max h-10 flex items-center gap-2 px-4 rounded-xl font-bold text-sm ring-1 ring-zinc-50/5 ring-inset transition-[background-color]
+}
+
+.btn-secondary {
+  @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80
+}
+
+.btn:has (.material-symbols-rounded) {
+  @apply pr-3
+}
+
+.btn-primary {
+  @apply h-11 bg-orange-400 text-zinc-950 hover:bg-orange-300 active:bg-orange-400
+}
+
+.btn-outline {
+  @apply h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800 lg:hidden
+}
+
+/* TEXT FIELD */
+
+.label {
+  @apply block text-zinc-200 text-sm font-normal mb-2
+}
+
+.text-field {
+  @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-zinc-700 focus:ring-1
+}
+
+.text-field::placeholder {
+  @apply text-zinc-400
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* PAGES TYPOGRAPHY */
+
+.project-title {
+  @apply font-extrabold lg:text-4xl text-2xl pb-8
+}
+
+.project-sub-title {
+  @apply font-semibold text-orange-300 lg:text-[25px] text-lg pb-2
+}
+
+.project-paragraph {
+  @apply font-extralight lg:text-sm text-[13px] mb-5
+}
+
+/* PAGES BUTTON */
+
+.project-button-1 {
+  @apply mt-5 h-10 bg-orange-400 text-zinc-950 hover:bg-orange-400/90 active:bg-orange-400/80
+}
+
+.project-button-2 {
+  @apply mt-5 h-10 bg-zinc-50 text-zinc-900 hover:bg-zinc-50/90 active:bg-zinc-50/70
+}
+
+
+/* PAGES PICTURE */
+
+.project-video {
+  @apply rounded-lg mx-auto mb-3 lg:w-80 lg:h-48 sm:h-80 max-sm:min-h-52 w-full
+}
+
+.project-picture {
+  @apply lg:max-w-80 max-w-full rounded-lg mx-auto mb-3
+}
+
+.project-picture-title {
+  @apply text-zinc-100 text-sm justify-items-center
+}
+
+/* BUTTON LANGUAGE */
+.toggle-icon {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-icon:hover {
+  transform: scale(1.05);
+}
+.group:hover .group-hover\:scale-100 {
+  transform: scale(1);
+}
+
