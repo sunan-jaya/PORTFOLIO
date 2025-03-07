@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BASE */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gradient-to-br from-zinc-900 to-zinc-950 text-zinc-50;
+}
+
+/* UTILITIES */
+
+.section {
+  @apply pt-16 lg:pt-24
+}
+
+.container {
+  @apply px-4 mx-auto lg:px-8 xl:max-w-5xl overflow-visible;
+}
+
+.material-symbols-rounded {
+  @apply w-[1em] h-[1em] overflow-hidden;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.img-box {
+  @apply bg-zinc-700 overflow-hidden;
+}
+
+.img-cover {
+  @apply w-full h-full object-cover
+}
+
+.reveal-up {
+  @apply translate-y-20 opacity-0
+}
+
+.service-icon {
+  @apply  text-6xl text-orange-400
+}
+
+/* TYPOGRAPHY */
+
+.headline-1 {
+  @apply max-w-max;
+  background: -webkit-linear-gradient(0deg, #fafafa, #1a1a1a);
+  -webkit-background-clip: text;
+}
+
+.headline-1 {
+  @apply font-semibold text-3xl lg:text-7xl lg:leading-[1.20] max-sm:text-5xl
+}
+
+.headline-2 {
+  @apply text-3xl font-semibold leading-tight lg:leading-tight lg:text-4xl
+}
+
+.headline-3 {
+  @apply text-2xl font-semibold lg:text-2xl max-sm:text-[18px]
+}
+
+.headline-4 {
+  @apply text-lg font-light lg:text-2xl max-sm:text-[15px]
+}
+
+/* MENU BUTTON */
+
+.menu-btn {
+  @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform,background-color] active:scale-75
+}
+
+/* BUTTON */
+
+.btn {
+  @apply max-w-max h-10 flex items-center gap-2 px-4 rounded-xl font-bold text-sm ring-1 ring-zinc-50/5 ring-inset transition-[background-color]
+}
+
+.btn:has (.material-symbols-rounded) {
+  @apply pr-3
+}
+
+.btn-primary {
+  @apply h-10 bg-orange-400 text-zinc-950 hover:bg-orange-300 active:bg-orange-400
+}
+
+.btn-outline {
+  @apply h-10 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800
+}
+
+.btn-contact {
+  @apply h-10 bg-orange-400 hover:bg-amber-300 text-zinc-900 text-base font-semibold 
+}
+
+/* TEXT FIELD */
+
+.label {
+  @apply block text-zinc-200 text-sm font-normal mb-2
+}
+
+.text-field {
+  @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-zinc-700 focus:ring-1
+}
+
+.text-field::placeholder {
+  @apply text-zinc-400
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* PAGES TYPOGRAPHY */
+
+.project-title {
+  @apply font-extrabold lg:text-4xl text-2xl max-sm:text-xl pb-8
+}
+
+.project-sub-title {
+  @apply font-semibold text-orange-300 lg:text-[25px] text-lg pb-2
+}
+
+.project-paragraph {
+  @apply font-extralight lg:text-sm text-[13px] mb-5
+}
+
+
+/* PAGES PICTURE */
+.project-video {
+  @apply rounded-lg mx-auto mb-3 lg:w-80 lg:h-48 sm:h-80 max-sm:min-h-52 w-full
+}
+
+.project-picture {
+  @apply lg:max-w-80 max-w-full rounded-lg mx-auto mb-3
+}
+
+.project-picture-title {
+  @apply text-zinc-100 text-sm text-center italic
+}
+
+/* BUTTON LANGUAGE */
+.toggle-icon {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-icon:hover {
+  transform: scale(1.05);
+}
+.group:hover .group-hover\:scale-100 {
+  transform: scale(1);
+}
+
