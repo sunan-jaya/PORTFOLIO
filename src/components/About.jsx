@@ -135,7 +135,7 @@ const About = () => {
             className="max-md:mt-5 sm:mt-8 lg:mt-0 max-w-[365px] rounded-3xl overflow-hidden shadow-xl mx-auto lg:mx-0 group order-1"
           >
             <img
-              src="/images/hero-banner-2.jpg"
+              src="/images/hero-banner.jpg"
               alt="Sunan Jaya"
               className="object-cover h-full w-full transition-transform duration-100 group-hover:scale-105"
             />

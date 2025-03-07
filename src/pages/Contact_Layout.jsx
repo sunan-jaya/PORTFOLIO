@@ -6,22 +6,22 @@ import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 // DATA SOCIAL LINKS
 const SOCIAL_LINKS = [
   {
-    href: 'mailto:contact@example.com',
+    href: 'mailto:sunanjayairmawan@gmail.com',
     icon: MdEmail,
     label: 'Email',
   },
   {
-    href: 'https://linkedin.com/in/username',
+    href: 'https://linkedin.com/in/sunan-jaya-irmawan',
     icon: FaLinkedin,
     label: 'LinkedIn',
   },
   {
-    href: 'https://github.com/username',
+    href: 'https://github.com/sunan-jaya',
     icon: FaGithub,
     label: 'GitHub',
   },
   {
-    href: 'https://instagram.com/username',
+    href: 'https://instagram.com/sunanjy',
     icon: FaInstagram,
     label: 'Instagram',
   },
