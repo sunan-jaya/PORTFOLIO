@@ -2,7 +2,7 @@ import { ReactLenis } from 'lenis/react';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation  } from 'react-router-dom';
 
 // PLUGIN GSAP
 gsap.registerPlugin(useGSAP, ScrollTrigger);

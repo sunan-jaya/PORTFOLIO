@@ -41,7 +41,7 @@ const project = [
     imgSrc: '/project_card/project_1_wide.png',
     title: 'Movie Streaming Web',
     category: 'website',
-    tags: ['Responsive Design'],
+    tags: ['Web Design'],
     projectLink: '/Movie-Streaming-Website',
     description: 'Responsive web design for movie streaming.',
   },

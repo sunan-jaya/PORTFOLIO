@@ -130,7 +130,7 @@ const Service = () => {
                       <div className="flex items-start gap-6">
                         <div className="max-sm:hidden text-5xl">{service.icon}</div>
                         <div>
-                          <h3 className="text-4xl font-bold bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent cursor-default">
+                          <h3 className="lg:text-4xl text-3xl font-bold bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent cursor-default">
                             {service.title}
                           </h3>
                           <p className="text-zinc-400 mt-2">{service.description}</p>
@@ -169,7 +169,6 @@ const Service = () => {
           {skillItem.map(({ label }, key) => (
             <motion.div
               key={key}
-              whileHover={{ y: -5 }}
               className="group relative bg-zinc-900/50 backdrop-blur-xl rounded-2xl gap-3 p-3 border border-zinc-50/10 hover:bg-zinc-700/50 transition-all cursor-default"
             >
               <h4 className="text-xl font-semibold text-center text-zinc-100">{label}</h4>

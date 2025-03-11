@@ -61,7 +61,7 @@ const Portfolio_Card_Wide = ({ imgSrc, title, tags, projectLink, category, descr
       <Link
         to={projectLink}
         className="absolute inset-0 z-10"
-        target="_blank"
+        target="_top"
         aria-label={`View ${title} project`}
       >
         <div className="absolute bottom-4 right-4 bg-orange-500/20 text-orange-400 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

@@ -114,15 +114,15 @@ body {
 /* PAGES TYPOGRAPHY */
 
 .project-title {
-  @apply font-extrabold lg:text-4xl text-2xl max-sm:text-xl pb-8
+  @apply font-extrabold lg:text-4xl text-2xl pb-8
 }
 
 .project-sub-title {
-  @apply font-semibold text-orange-300 lg:text-[25px] text-lg pb-2
+  @apply font-semibold text-orange-300 lg:text-[25px] text-xl pb-2
 }
 
 .project-paragraph {
-  @apply font-extralight lg:text-sm text-[13px] mb-5
+  @apply font-extralight mb-5
 }
 
 
