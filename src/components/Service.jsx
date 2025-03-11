@@ -133,12 +133,12 @@ const Service = () => {
                           <h3 className="lg:text-4xl text-3xl font-bold bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent cursor-default">
                             {service.title}
                           </h3>
-                          <p className="text-zinc-400 mt-2">{service.description}</p>
+                          <p className="text-zinc-400 mt-4">{service.description}</p>
                         </div>
                       </div>
 
                       {/* DETAIL LIST */}
-                      <div className="grid gap-4">
+                      <div className="grid gap-3">
                         {service.details.map((detail, index) => (
                           <motion.div
                             key={index}

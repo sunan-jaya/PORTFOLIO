@@ -112,7 +112,7 @@ const Project_2 = () => {
             </section>
 
             {/* BUTTON */}
-            <div className="flex flex-wrap gap-4 project-paragraph whitespace-nowrap max-sm:justify-center">
+            <div className="flex flex-wrap gap-4 project-paragraph whitespace-nowrap text-justify">
               <a
                 href="https://github.com/sunan-jaya/Movie-Apps"
                 target="_blank"

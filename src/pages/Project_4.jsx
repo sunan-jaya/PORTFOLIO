@@ -80,7 +80,7 @@ const Project_4 = () => {
       <Navbar_Layout onLanguageChange={handleLanguageChange} />
 
       {/* KONTEN UTAMA */}
-      <div className="container bg-zinc-800/50 p-7 max-sm:rounded-none rounded-2xl md:p-12 max-sm:text-justify">
+      <div className="container bg-zinc-800/50 p-7 max-sm:rounded-none rounded-2xl md:p-12 text-justify">
         <div className="flex justify-between items-center mb-8">
           <h1 className="project-title tracking-wide">HR Management System</h1>
         </div>
