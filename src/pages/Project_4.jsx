@@ -129,12 +129,12 @@ const Project_4 = () => {
             </section>
 
             {/* BUTTON */}
-            <div className="flex space-x-4 project-paragraph whitespace-nowrap max-sm:justify-center">
+            <div className="flex flex-wrap gap-4 project-paragraph whitespace-nowrap max-sm:justify-center">
               <a
                 href="https://github.com/sunan-jaya/Employee-Management-System-PHP"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
+                className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors max-sm:flex-1 max-sm:justify-center"
               >
                 <Github size={20} />
                 <span>GitHub</span>
@@ -143,7 +143,7 @@ const Project_4 = () => {
                 href="http://employee-management-system.infinityfreeapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 px-4 py-2 bg-green-600 hover:bg-green-700 rounded-lg transition-colors"
+                className="flex items-center space-x-2 px-4 py-2 bg-green-600 hover:bg-green-700 rounded-lg transition-colors max-sm:flex-1 max-sm:justify-center"
               >
                 <Monitor size={20} />
                 <span>Live Demo</span>
@@ -152,7 +152,7 @@ const Project_4 = () => {
                 href="https://drive.google.com/drive/folders/1JsEbJG4PV5LPTVM8t9swoLVgwejN6lv_?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors"
+                className="flex items-center space-x-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors max-sm:flex-1 max-sm:justify-center"
               >
                 <FileText size={20} />
                 <span>Documentation</span>
